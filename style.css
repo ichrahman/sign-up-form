@@ -49,8 +49,44 @@ table {
     
     src: url(./font/Norse-Bold.otf)
   }
+
+.container{
+    display: flex;
+    height: 100%;
+}
   
  
-  body{
+.left h1{
     font-family: norse-bold, sans-serif;
+    color: white;
   }
+
+.left img{
+    width: 50px;
+}
+
+.left, .right{
+    height: 100vh;
+}
+
+
+.left{
+    flex: 1;
+    background: url("./assets/bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.right{
+    flex: 2;
+    padding: 30px;
+    background-color: #ccc;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 6rem;
+    padding: 15px;
+}
